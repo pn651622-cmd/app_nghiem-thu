@@ -35,7 +35,7 @@ if submit_button:
                 }
                 
                 # Dán URL Web App bạn copy ở Bước 1 vào trong dấu ngoặc kép dưới đây:
-                gas_url = "https://script.google.com/macros/s/AKfycbx-Aj5LmVatCqwX6dpoledbNJEKh2ot7EjgspYBrmoemrDHHYkiAPyFGIgngT2l2rKTQA/exec"
+                gas_url = "https://script.google.com/macros/s/AKfycbxrlAnmjDkVGObLX3QXs85lOeX9D1LjmDjnbm3DYpOHGDvM7ifVuJBxw8okP2-_qLcZyA/exec"
                 
                 response = requests.post(gas_url, json=payload)
                 result = response.json()
