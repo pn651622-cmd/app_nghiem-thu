@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st  # type: ignore[import-not-found]
 import requests
 import base64
 
@@ -35,7 +35,7 @@ if submit_button:
                 }
                 
                 # Dán URL Web App bạn copy ở Bước 1 vào trong dấu ngoặc kép dưới đây:
-                gas_url = "https://script.google.com/macros/s/AKfycbx-Aj5LmVatCqwX6dpoledbNJEKh2ot7EjgspYBrmoemrDHHYkiAPyFGIgngT2l2rKTQA/exec"
+                gas_url = "https://script.google.com/macros/s/AKfycbyRwMZBpnRmUc7DlwHp5TLSeuoPP7ZpPGvau2Yb_oIZkM-78461KREwoLzPTiX5ihEbSQ/exec"
                 
                 response = requests.post(gas_url, json=payload)
                 result = response.json()
